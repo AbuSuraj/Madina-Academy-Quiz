@@ -14,9 +14,9 @@ const TopicWiseQus = () => {
     //     {Swal.fire(``)}
     // }
     return (
-        <div className='mx-44'>
+        <div className='mx-44 mt-10'>
             <div>
-                <h2>Quiz on: {data.name}</h2>
+                <h2 className='text-center text-3xl font-bold'>Quiz on: {data.name}</h2>
             </div>
            
              <ol className='list-decimal shadow-xl p-4 mt-5'>

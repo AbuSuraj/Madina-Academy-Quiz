@@ -6,12 +6,15 @@ import Home from './compnents/Home/Home';
 import Statistics from './compnents/Statistics/Statistics';
 import Blog from './compnents/Blog/Blog';
 import TopicWiseQus from './compnents/TopicWiseQus/TopicWiseQus';
+import ErrorMsg from './compnents/ErrorPage/ErrorPage';
+import ErrorPage from './compnents/ErrorPage/ErrorPage';
 
 function App() {
   const router = createBrowserRouter([
     {
       path:'/',
       element: <Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       
       children:[
         {

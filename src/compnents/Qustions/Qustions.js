@@ -14,7 +14,16 @@ const showCorrectAnsMsg = ()=>{
     {Swal.fire("Your answer is correct.")}
 }
 const showIncorrectMsg =() =>{
-    {Swal.fire(`Sorry, wrong answer. Correct answer is: ${correctAnswer}`)}
+    Swal.fire({
+        icon: 'error',
+        title: 'Sorry, wrong answer.',
+        text: `Correct answer is: ${correctAnswer}`,
+       
+      })
+    // {Swal.fire
+    //     ({ icon:'Sorry, wrong answer',
+    //     text: `Correct answer is ${correctAnswer}`})
+    // }
 }
 
 let activeStyle = {
