@@ -4,7 +4,7 @@ import QuizTopicsDetail from "../QuizTopicsDetail/QuizTopicsDetail";
 
 const Home = () => {
   const quizTopics = useLoaderData();
-  console.log(quizTopics.data);
+//   console.log(quizTopics.data);
   const { data } = quizTopics;
   return (
     <div className="mx-12 my-12">
