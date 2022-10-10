@@ -53,7 +53,7 @@ let activeStyle = {
       {options.map((option) => (
         <ul className="list-disc">
           <button className="ml-4 mb-2">
-            <li onClick={()=>handleOption(option) } className="hover:bg-green-500 active:bg-green-500">  {option} </li>
+            <li key={option.id} onClick={()=>handleOption(option) } className="hover:bg-green-500 active:bg-green-500">  {option} </li>
           </button>
           {/* <input   type="radio"/>
                            <label for="html">{option}</label> */}

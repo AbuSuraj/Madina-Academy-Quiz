@@ -9,7 +9,7 @@ const TopicWiseQus = () => {
     const {data} = topicwiseDetails;
     const {questions} = data
     // console.log(data);
-    // console.log(questions);
+    // console.log(id);
     // const showAns = () =>{
     //     {Swal.fire(``)}
     // }
