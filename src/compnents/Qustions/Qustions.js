@@ -5,12 +5,22 @@ const Qustions = ({questionAndOption}) => {
     const i =0;
     const {options,correctAnswer,question} = questionAndOption;
     return (
-              <div>
-                 
+              <div>    
+                   <p className='font-bold text-lg mb-3'>
                         {question.slice(3,question.length-4)}
-                        {options.map(option=>
-                        <p type="radio" class="appearance-none indeterminate:bg-gray-300">{option}</p>
-                        )}
+                        </p> 
+                        {
+                        options.map(option=> <ul className='list-disc'>
+                            <button className='ml-4 mb-2'>
+                               <li> {option}</li>
+                                </button>
+                             {/* <input   type="radio"/>
+                           <label for="html">{option}</label> */}
+                         </ul>
+                         
+                         )
+                         
+                         }
                     
               </div>
               
