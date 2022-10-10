@@ -13,9 +13,10 @@ const QuizTopicsDetail = ({ topic }) => {
           <h2 className="card-title">{name}</h2>
           <p className="font-semibold">Number of Qustions: {total}</p>
           <div className="card-actions justify-end">
-            <Link >
-            </Link>
+            <Link to={`/quiz/${id}`}>
             <button className="btn btn-primary">Start Quiz</button>
+            </Link>
+            
           </div>
         </div>
       </div>
