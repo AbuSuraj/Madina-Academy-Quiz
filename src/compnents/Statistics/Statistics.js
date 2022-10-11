@@ -20,7 +20,7 @@ const Statistics = () => {
   console.log(data);
   return (
     <div className="text-center">
-      <h1>statistics:</h1>
+      <h1 className="text-3xl font-bold my-10">Statistics of  number of quiz on each topic</h1>
       <div className="mx-auto" style={{ width: 400 }}>
         
         <BarChart width={400} height={400} data={data}>
