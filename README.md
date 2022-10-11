@@ -9,6 +9,13 @@ An E-commerce platform for taking quiz on different topics of Web Development.
 ## Live Link
 Hosted in Netlify -> [Madina Academy Quiz](https://mellifluous-chebakia-e5aa8c.netlify.app/)
  
+## Steps 
+1. Create NavBar.
+2. Add Routes among paths
+3. Load Quiz topic in Home page
+4. Create Nested Route in Home page
+5. Add BarChart in Statistics page.
+6. Wrote a few important interview qustion in blog page
 ## React Router Dom v6.4 
 Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)
 
@@ -23,4 +30,4 @@ Tailwind Components ->
 Icon -> [HeroIcon](https://heroicons.com/)
 Logo Photo -> [google]("https://t4.ftcdn.net/jpg/04/93/12/57/360_F_493125771_FBG0HlcYeQM5VnRwo8r12vOT3Y40XVbh.jpg")
 
-I 
+ 
