@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Blog = () => {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <div>
       <h1 className="text-3xl text-center font-bold font-serif my-5 ">
         Some important interview Qustions
       </h1>
-      <div className="ml-20 mr-4 border border-2 rounded-3xl p-4 border-black shadow-2xl">
+      <div data-aos="fade-right" className="ml-20 mr-4 border border-2 rounded-3xl p-4 border-black shadow-2xl my-8 ">
         <h1 className="text-2xl font-bold">
           Q.1. What are the purposes of the React Router
         </h1>
@@ -27,7 +32,7 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className="ml-20 mr-4 my-3 border border-2 rounded-3xl p-4 border-black shadow-2xl">
+      <div data-aos="fade-left" className="ml-20 mr-4 my-8 border border-2 rounded-3xl p-4 border-black shadow-2xl">
         <h1 className="text-2xl font-bold">Q.2. How does context api works</h1>
         <div className="flex">
           <p className="font-bold mx-2">Answer: </p>
@@ -46,7 +51,7 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className="ml-20 mr-4 border border-2 rounded-3xl p-4 border-black shadow-2xl">
+      <div data-aos="fade-up-right" className="ml-20 my-8 mr-4 border border-2 rounded-3xl p-4 border-black shadow-2xl">
         <h1 className="text-2xl font-bold">Q.3. What is React useRef Hook</h1>
         <div className="flex">
           <p className="font-bold mx-2">Answer: </p>

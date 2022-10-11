@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const QuizTopicsDetail = ({ topic }) => {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   const { id, name, logo, total } = topic;
   return (
-    <div>
+    <div data-aos="flip-left">
       <div className="card w-96 bg-base-200 shadow-xl">
         <figure>
           <img src= {logo} alt="topic" />
