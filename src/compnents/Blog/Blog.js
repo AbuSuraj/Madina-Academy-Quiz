@@ -69,7 +69,7 @@ const Blog = () => {
             The useRef Hook lets us create mutable variables inside functional
             components. There are three main key points that you should keep in
             mind when using the useRef Hook: <br />
-            <ul className="ml-16 list-disc ">
+            <ul className="ml-10 list-disc ">
               <li>A ref created with useRef will be created only when the component has been mounted and preserved for the full lifecycle.</li>
               <li>Refs can be used for accessing DOM nodes or React elements, and for storing mutable variables (like with instance variables in class components).</li>
               <li>Updating a ref is a side effect so it should be done only inside a useEffect (or useLayoutEffect) or inside an event handler.</li>

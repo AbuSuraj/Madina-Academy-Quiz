@@ -9,10 +9,10 @@ const QuizTopicsDetail = ({ topic }) => {
   },[])
   const { id, name, logo, total } = topic;
   return (
-    <div data-aos="flip-left">
-      <div className="card w-96 bg-base-200 shadow-xl">
+    <div>
+      <div data-aos="flip-up" className="card bg-base-200 shadow-xl">
         <figure>
-          <img src= {logo} alt="topic" />
+          <img src= {logo} alt="topic" style={{width:'200px'}}/>
         </figure>
         <div className="card-body bg-slate-100">
           <h2 className="card-title">{name}</h2>

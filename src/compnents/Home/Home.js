@@ -7,7 +7,7 @@ const Home = () => {
   //   console.log(quizTopics.data);
   const { data } = quizTopics;
   return (
-    <div className="mx-12 my-12">
+    <div className="mx-0 my-12 md:mx-12">
       <div>
       <h1 className="text-xl font-sans">
             Madina Academy is basically an It training center. We believe that
@@ -48,7 +48,7 @@ const Home = () => {
         <h1 className="text-center text-3xl font-bold mb-6">Quiz yourself… <br /> How well do you know the basics of Web Development</h1>
       </div>
 
-      <div className="mx-40 grid grid-cols-1 md:grid-cols-2 mb-2 gap-6">
+      <div  className=" grid grid-cols-1 md:grid-cols-2 mb-2 gap-6 mx-8 md:mx-32">
         {data.map((topic) => (
           <QuizTopicsDetail key={topic.id} topic={topic}></QuizTopicsDetail>
         ))}

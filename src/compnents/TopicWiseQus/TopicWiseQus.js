@@ -17,15 +17,15 @@ const TopicWiseQus = () => {
   //     {Swal.fire(``)}
   // }
   return (
-    <div className="mx-44 mt-10 relative">
+    <div className="md:mx-44 mx-4 mt-10 relative">
       <div>
         <h2 className="text-center text-3xl font-bold">Quiz on: {data.name}</h2>
       </div>
 
-      <ol  className="list-decimal shadow-xl p-4 mt-5 ">
+      <ol  className="list-decimal   p-2 mt-5 ">
         {questions.map((questionAndOption) => (
           <div className="">
-            <p className="m-4 shadow-2xl">
+            <p className=" mb-4 shadow-none  md:shadow-2xl">
               <Qustions
                 key={questionAndOption.id}
                 setCorrectAnsCount={setCorrectAnsCount}
