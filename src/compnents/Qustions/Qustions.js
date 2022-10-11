@@ -8,11 +8,21 @@ const Qustions = ({ questionAndOption }) => {
    
   const { options, correctAnswer, question } = questionAndOption;
   const showAns = () =>{
-    {Swal.fire(`${correctAnswer}`)}
+    Swal.fire({
+      icon: 'info',
+      title: 'Correct answer',
+      text: ` ${correctAnswer}`,
+     
+    })
 }
 const showCorrectAnsMsg = ()=>{
-    {Swal.fire("Your answer is correct.")}
-}
+    Swal.fire(
+      {
+        icon: "success",
+        title: "Your answer is correct.",
+      }
+      )}
+
 const showIncorrectMsg =() =>{
     Swal.fire({
         icon: 'error',
@@ -43,22 +53,25 @@ let activeStyle = {
   }
   return (
     <div>
-      <div className="flex items-baseline justify-between">
-      <p className="font-bold text-lg mb-3">
+      <div className="flex items-baseline justify-between bg-sky-200 pl-7 pr-2 rounded-2xl">
+      <div dangerouslySetInnerHTML={{__html: question}}/>
+      {/* <li className="font-bold text-lg mb-3 ">
         {question.slice(3, question.length - 4)}
-      </p>
+      </li> */}
       <EyeIcon onClick={showAns} className="h-6 w-6 cursor-pointer">
                        </EyeIcon>
       </div>
-      {options.map((option) => (
-        <ul className="list-disc">
-          <button className="ml-4 mb-2">
-            <li key={option.id} onClick={()=>handleOption(option) } className="hover:bg-green-500 active:bg-green-500">  {option} </li>
+      <div className="ml-10 grid grid-cols-2">
+      {options.map((option,index) => (
+        <ul className=" list-disc pl-2 hover:bg-purple-500 rounded-xl mb-6 mr-12">
+          <button className="ml-4  ">
+            <li  key={index} onClick={()=>handleOption(option) } className='mr-6'>  {option} </li>
           </button>
           {/* <input   type="radio"/>
                            <label for="html">{option}</label> */}
         </ul>
       ))}
+      </div>
     </div>
   );
 };
