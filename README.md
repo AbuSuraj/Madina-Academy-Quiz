@@ -3,7 +3,7 @@
 ## Projects Description
 # Madina Academy Quiz Repository
 
-An E-commerce platform for taking quiz on different topics of Web Development.
+A Web App for taking quiz on different topics of Web Development.
 
 
 ## Live Link
@@ -16,6 +16,7 @@ Hosted in Netlify -> [Madina Academy Quiz](https://mellifluous-chebakia-e5aa8c.n
 4. Create Nested Route in Home page
 5. Add BarChart in Statistics page.
 6. Wrote a few important interview qustion in blog page
+7. Footer 
 ## React Router Dom v6.4 
 Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)
 
