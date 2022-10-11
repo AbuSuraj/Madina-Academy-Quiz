@@ -22,7 +22,7 @@ const TopicWiseQus = () => {
         <h2 className="text-center text-3xl font-bold">Quiz on: {data.name}</h2>
       </div>
 
-      <ol className="list-decimal shadow-xl p-4 mt-5 ">
+      <ol  className="list-decimal shadow-xl p-4 mt-5 ">
         {questions.map((questionAndOption) => (
           <div className="">
             <p className="m-4 shadow-2xl">

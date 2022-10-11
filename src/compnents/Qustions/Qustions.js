@@ -1,12 +1,15 @@
 import { EyeIcon } from "@heroicons/react/24/solid";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Qustions = ({ questionAndOption, setCorrectAnsCount, setInCorrectAnsCount }) => {
   // console.log(questionAndOption);
   const [click, setClick] = useState(false);
-  
+  useEffect(()=>{
+    AOS.init();
+  },[])
   // let correctAnsCount =0;
   // let inCorrectAnsCount =0;
   const { options, correctAnswer, question } = questionAndOption;
@@ -60,7 +63,7 @@ let activeStyle = {
   }
   return (
     <div>
-      <div>
+      <div data-aos="flip-right">
       <div className="flex items-baseline justify-between bg-sky-200 pl-7 pr-2 rounded-2xl mb-3">
       <li className="font-bold text-lg mb-3" dangerouslySetInnerHTML={{__html: question}}/>
       {/* <li className="font-bold text-lg mb-3 ">
