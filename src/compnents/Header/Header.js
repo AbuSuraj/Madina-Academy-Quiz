@@ -14,13 +14,13 @@ const Header = () => {
             <nav className='mr-12'>
                 <NavLink to={'/home'} style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            } className="btn btn-secondary mr-4" >Home</NavLink>
+            } className="btn btn-secondary mr-4  font-bold" >Home</NavLink>
                 <NavLink to={'/statistics'} style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            } className="btn btn-secondary mr-4" >Statistics</NavLink>
+            } className="btn btn-secondary mr-4 font-bold" >Statistics</NavLink>
                 <NavLink to={'/blog'} style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            } className="btn btn-secondary mr-2" >Blog</NavLink>
+            } className="btn btn-secondary mr-2 font-bold" >Blog</NavLink>
             </nav>
         </div>
     );
