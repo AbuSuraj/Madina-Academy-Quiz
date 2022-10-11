@@ -19,11 +19,11 @@ const DataPlotting = ({ topic }) => {
     <div className="text-center">
       <h1>{total}</h1>
      
-        <ResponsiveContainer width="100%" height="100%">
+        {/* <ResponsiveContainer width="100%" height="100%"> */}
           <BarChart width={150} height={40} data={topic}>
             <Bar dataKey="total" fill="#8884d8" />
           </BarChart>
-        </ResponsiveContainer>
+        {/* </ResponsiveContainer> */}
       
     </div>
   );
